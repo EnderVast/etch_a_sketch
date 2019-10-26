@@ -14,8 +14,12 @@ function gridGenerator(nrows, ncols) {
 
 gridGenerator(16, 16); 
 
-const gridDivMouse = document.querySelector(".grid");
-console.log(gridDivMouse);
-gridDivMouse.addEventListener('onmouseenter', function(){
-    gridDivMouse.style.backgroundColor = "black";
+// const gridDivMouse = document.querySelector(".grid");
+// console.log(gridDivMouse);
+gridDivContainer.addEventListener('mouseover', function(){
+    let gridDivMouse = event.target;
+    if (gridDivMouse.classList == "grid") {
+        gridDivMouse.style.backgroundColor = "black";
+    }
+    console.log(event.target);
 });
