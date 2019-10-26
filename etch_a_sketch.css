@@ -1,0 +1,9 @@
+div.grid{
+    border: 1px black solid;
+    width: 24px;
+    height: 24px;
+    display: inline-grid;
+    vertical-align: top;
+}
+
+
